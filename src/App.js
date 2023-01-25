@@ -8,7 +8,10 @@ function App() {
   return (
     <div className="App">
       <h1>counter : {counter}</h1>
-      {isLogged ? "You are logged in": 'please login'}
+      <button>increment</button>
+      <button>decrement</button>
+      <hr />
+      {isLogged ? "You are logged in" : "please login"}
     </div>
   );
 }
