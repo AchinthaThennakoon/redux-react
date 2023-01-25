@@ -1,7 +1,16 @@
+import { useSelector } from "react-redux";
 import "./App.css";
 
 function App() {
-  return <div className="App">hello world</div>;
+  const counter = useSelector((state) => state.counter);
+  const isLogged = useSelector((state) => state.isLogged);
+
+  return (
+    <div className="App">
+      <h1>counter : {counter}</h1>
+      {isLogged ? "You are logged in": 'please login'}
+    </div>
+  );
 }
 
 export default App;
