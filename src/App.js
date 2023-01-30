@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="App">
       <h1>counter : {counter}</h1>
-      <button onClick={() => dispatch(increment())}>increment</button>
-      <button onClick={() => dispatch(decrement())}>decrement</button>
+      <button onClick={() => dispatch(increment(5))}>increment</button>
+      <button onClick={() => dispatch(decrement(5))}>decrement</button>
       <hr />
       {isLogged ? "You are logged in" : "please login"}
     </div>
